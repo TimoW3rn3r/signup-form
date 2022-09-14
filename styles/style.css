@@ -173,6 +173,10 @@ button {
     height: 80vh;
   }
 
+  div.background-credit {
+    top: 75vh;
+  }
+
   .intro-wrapper,
   .form-wrapper {
     margin-left: 0;
