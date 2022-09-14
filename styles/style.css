@@ -1,3 +1,8 @@
+@font-face {
+  font-family: norse;
+  src: url(../assets/Norse-Bold.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -40,6 +45,40 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
+}
+
+div.logo-container {
+  background: #111;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+
+  position: relative;
+  top: 150px;
+}
+
+img.logo {
+  width: 100px;
+  height: auto;
+}
+
+span.logo-text {
+  color: white;
+  font-size: 100px;
+  font-family: norse, sans-serif;
+}
+
+div.background-credit {
+  position: relative;
+  top: 80vh;
+  text-align: center;
+  color: white;
+}
+
+.background-credit a {
+  color: white;
 }
 
 .main {
