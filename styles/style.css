@@ -11,8 +11,8 @@
 }
 
 :root {
-  --bg-color: #fff;
-  --bg-of-bg: #eee;
+  --bg-color: #e8e5e7;
+  --bg-of-bg: #d2d2d1;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -140,10 +140,33 @@ input[type="text"],
 input[type="tel"],
 input[type="password"],
 input[type="email"] {
+  appearance: none;
   width: 100%;
   height: 32px;
   font-size: 1.2rem;
   padding: 2px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  outline: 1px solid purple;
+}
+
+input[type="text"]:invalid,
+input[type="tel"]:invalid,
+input[type="password"]:invalid,
+input[type="email"]:invalid,
+#password.invalid {
+  outline: 1px solid red;
+}
+
+.password-error {
+  color: red;
+  font-size: 0.75rem;
 }
 
 button {
@@ -155,6 +178,7 @@ button {
   font-size: 1.2rem;
   font-weight: 400;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .confirmation-wrapper {
